@@ -1,6 +1,6 @@
 {
   "name": "artemis-link-ws",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Non-terminating alternative to apollo-link-ws",
   "repository": {
     "type": "git",
