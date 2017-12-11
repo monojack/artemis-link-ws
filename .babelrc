@@ -1,0 +1,14 @@
+{
+  "presets": [["es2015", { "loose": true, "modules": false }]],
+  "env": {
+    "cjs": {
+      "plugins": [["transform-es2015-modules-commonjs", { "loose": true }]]
+    },
+    "rollup": {
+      "plugins": ["external-helpers"]
+    },
+    "test": {
+      "plugins": [["transform-es2015-modules-commonjs", { "loose": true }]]
+    }
+  }
+}
