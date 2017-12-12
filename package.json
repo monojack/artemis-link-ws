@@ -17,8 +17,11 @@
   "main": "./lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
-  "devDependencies": {
+  "dependencies": {
     "apollo-link": "1.0.6",
+    "subscriptions-transport-ws": "0.9.4"
+  },
+  "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-eslint": "8.0.3",
     "babel-plugin-external-helpers": "6.22.0",
@@ -40,16 +43,11 @@
     "rollup-plugin-node-builtins": "2.1.2",
     "rollup-plugin-node-resolve": "3.0.0",
     "rollup-plugin-replace": "2.0.0",
-    "rollup-plugin-uglify": "2.0.1",
-    "subscriptions-transport-ws": "0.9.4"
+    "rollup-plugin-uglify": "2.0.1"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/monojack/artemis-link-ws/issues"
-  },
-  "peerDependencies": {
-    "apollo-link": "^1.0.6",
-    "subscriptions-transport-ws": "^0.9.4"
   },
   "scripts": {
     "build:cjs": "cross-env BABEL_ENV=cjs babel src --out-dir lib",
@@ -67,6 +65,5 @@
     "dist",
     "lib",
     "es"
-  ],
-  "dependencies": {}
+  ]
 }
